@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+  <data>
+
+    <record model="ir.ui.view" id="ev_believer_list">
+      <field name="name">ev.believer</field>
+      <field name="model">ev.believer</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field 
+            name="name"
+          /> 
+          <field 
+            name="state_id" 
+          />
+					<field 
+            name="municipality_id" 
+          />
+					<field 
+            name="parish_id" 
+          />
+          <field 
+            name="from_web"
+          />
+          <field 
+            name="from_mobile"
+          />
+        </tree>
+      </field>
+    </record>
+
+    <record model="ir.ui.view" id="ev_believer_form">
+      <field name="name">ev.believer</field>
+      <field name="model">ev.believer</field>
+      <field name="arch" type="xml">
+        <form>
+          <group>
+            <field 
+              name="name" 
+            />
+            <field name="country_id" attrs="{
+              'readonly':True,
+              'invisible':True
+            }" />
+            <field 
+              name="state_id" 
+              domain="[('country_id', '=', country_id)]" 
+            />
+            <field 
+              name="municipality_id" 
+              domain="[('state_id','=', state_id)]" 
+            />
+            <field 
+              name="parish_id" 
+              domain="[('municipality_id','=', municipality_id)]" 
+            />
+            <field 
+              name="sector" 
+            />
+            <field 
+              name="street" 
+            />
+            <field 
+              name="building" 
+            />
+            <field 
+              name="house" 
+            />
+            <field 
+              name="localphone_number" 
+            />
+            <field 
+              name="cellphone_number" 
+            />
+            <field 
+              name="from_web"
+              invisible="1" 
+            />
+            <field 
+              name="from_mobile"
+              invisible="1" 
+            />
+          </group>
+        </form>
+      </field>
+    </record>
+
+    <record model="ir.actions.act_window" id="ev_believer_action_window">
+      <field name="name">Believer</field>
+      <field name="res_model">ev.believer</field>
+      <field name="view_mode">tree,form</field>
+      <field name="help" type="html">
+        <p class="oe_view_nocontent_create">
+          from this module, believer records are created
+        </p>
+      </field>
+      <field name="context" eval="{'default_from_web': True}"/>
+    </record>
+
+    <menuitem 
+      name="Believer" 
+      id="ev_admin_menu_believer" 
+      parent="ev_admin.ev_menu_root" 
+      action="ev_believer_action_window" 
+      sequence="1"
+      groups="base.user_admin"
+    />
+  </data>
+
+</odoo>

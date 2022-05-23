@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+  <data>
+
+    <!-- Top menu item -->
+    <menuitem 
+        id="ev_menu_root" 
+        name="Admin believer" 
+    />
+
+    <!-- menu categories -->
+    <menuitem 
+        id="ev_menu_believer" 
+        name="Believer" 
+        parent="ev_menu_root" 
+        sequence="1" 
+        groups="base.user_admin"
+    />
+    
+  </data>
+</odoo>

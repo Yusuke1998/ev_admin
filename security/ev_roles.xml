@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <data>
+        <record model="ir.module.category" id="ev_category">
+            <field name="name">Roles EV</field>
+            <field name="description">Roles de EV Admin</field>
+        </record> 
+
+        <!-- ev user -->
+        <record  model="res.groups" id="group_rol_believer">
+            <field name="name">believer</field>
+            <field name="category_id" ref="ev_admin.ev_category" />
+        </record>
+    </data>
+</odoo>
