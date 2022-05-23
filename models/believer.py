@@ -9,6 +9,7 @@ class Believer(models.Model):
     _description = 'Model for the Believers'
     _inherit = ['portal.mixin', 'mail.thread', 'mail.activity.mixin']
     _inherits = {'res.partner': 'partner_id'}
+    _rec_name = 'name'
 
     from_web = fields.Boolean(
         string='From Web',
@@ -81,5 +82,17 @@ class Believer(models.Model):
         string='Cell Telephone',
         help='Cell Telephone Number',
         size=13
+    )
+
+    department_ids = fields.Many2many(
+        'ev.department',
+        string='Departments',
+        help='Departments of Believer',
+    )
+
+    active = fields.Boolean(
+        string='Active',
+        default=True,
+        help='Active Believer',
     )
 

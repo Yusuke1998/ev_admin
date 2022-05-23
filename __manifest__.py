@@ -12,6 +12,8 @@
     'version': '0.1',
     'depends': ['base', 'portal', 'website', 'address_venezuela'],
     'data': [
+        # seeds
+        'data/departments.xml',
 
         # security
         'security/ev_roles.xml',
@@ -23,6 +25,8 @@
         
         # views
         'views/believer.xml',
+        'views/department.xml',
+        'views/new.xml',
     ],
     'installable': True,
     'demo': [

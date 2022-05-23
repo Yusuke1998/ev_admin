@@ -1,2 +1,4 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
 access_ev_believer_group_rol_believer,ev.believer,model_ev_believer,ev_admin.group_rol_believer,1,0,0,0
+access_ev_department_group_rol_believer,ev.department,model_ev_department,ev_admin.group_rol_believer,1,0,0,0
+access_ev_new_group_rol_believer,ev.new,model_ev_new,ev_admin.group_rol_believer,1,0,0,0

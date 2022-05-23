@@ -1,2 +1,4 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
 access_ev_believer_group_system,ev.believer,model_ev_believer,base.group_system,1,1,1,1
+access_ev_department_group_system,ev.department,model_ev_department,base.group_system,1,1,1,1
+access_ev_new_group_system,ev.new,model_ev_new,base.group_system,1,1,1,1

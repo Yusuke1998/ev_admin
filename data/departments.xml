@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <record id="depart1" model="ev.department">
+            <field name="name">Danza</field>  
+        </record>
+        <record id="depart2" model="ev.department">
+            <field name="name">Adoración</field>  
+        </record>
+        <record id="depart3" model="ev.department">
+            <field name="name">Teatro</field>  
+        </record>
+        <record id="depart4" model="ev.department">
+            <field name="name">Jóvenes</field>  
+        </record>
+        <record id="depart5" model="ev.department">
+            <field name="name">Damas</field>  
+        </record>
+        <record id="depart6" model="ev.department">
+            <field name="name">Caballeros</field>  
+        </record>
+        <record id="depart7" model="ev.department">
+            <field name="name">Protocolo</field>  
+        </record>
+        <record id="depart8" model="ev.department">
+            <field name="name">Cocina</field>  
+        </record>
+        <record id="depart9" model="ev.department">
+            <field name="name">Limpieza</field>  
+        </record>
+        <record id="depart10" model="ev.department">
+            <field name="name">Sonido</field>  
+        </record>
+        <record id="depart11" model="ev.department">
+            <field name="name">Jornada social</field>  
+        </record>
+        <record id="depart12" model="ev.department">
+            <field name="name">Niños</field>  
+        </record>
+    </data>
+</odoo>

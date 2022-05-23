@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+  <data>
+
+    <record model="ir.ui.view" id="ev_news_list">
+      <field name="name">News</field>
+      <field name="model">ev.new</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field 
+            name="title"
+          /> 
+        </tree>
+      </field>
+    </record>
+
+    <record model="ir.ui.view" id="ev_news_form">
+      <field name="name">News</field>
+      <field name="model">ev.new</field>
+      <field name="arch" type="xml">
+        <form>
+          <group>
+            <field 
+              name="title" 
+            />
+            <field 
+              name="description" 
+            />
+          </group>
+        </form>
+      </field>
+    </record>
+
+    <record model="ir.actions.act_window" id="ev_news_action_window">
+      <field name="name">News</field>
+      <field name="res_model">ev.new</field>
+      <field name="view_mode">tree,form</field>
+      <field name="help" type="html">
+        <p class="oe_view_nocontent_create">
+          from this module, news records are created
+        </p>
+      </field>
+    </record>
+
+    <menuitem 
+      name="News" 
+      id="ev_admin_menu_news" 
+      parent="ev_admin.ev_menu_root" 
+      action="ev_news_action_window" 
+      sequence="3"
+      groups="base.user_admin"
+    />
+  </data>
+
+</odoo>

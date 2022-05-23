@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+  <data>
+
+    <record model="ir.ui.view" id="ev_department_list">
+      <field name="name">Department</field>
+      <field name="model">ev.department</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field 
+            name="name"
+          /> 
+        </tree>
+      </field>
+    </record>
+
+    <record model="ir.ui.view" id="ev_department_form">
+      <field name="name">Department</field>
+      <field name="model">ev.department</field>
+      <field name="arch" type="xml">
+        <form>
+          <group>
+            <field 
+              name="name" 
+            />
+          </group>
+        </form>
+      </field>
+    </record>
+
+    <record model="ir.actions.act_window" id="ev_department_action_window">
+      <field name="name">Department</field>
+      <field name="res_model">ev.department</field>
+      <field name="view_mode">tree,form</field>
+      <field name="help" type="html">
+        <p class="oe_view_nocontent_create">
+          from this module, department records are created
+        </p>
+      </field>
+    </record>
+
+    <menuitem 
+      name="Department" 
+      id="ev_admin_menu_department" 
+      parent="ev_admin.ev_menu_root" 
+      action="ev_department_action_window" 
+      sequence="2"
+      groups="base.user_admin"
+    />
+  </data>
+
+</odoo>

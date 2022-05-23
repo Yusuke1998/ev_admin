@@ -9,11 +9,3 @@ class Users(models.Model):
         string='Believer',
         help='Believer of User',
     )
-
-    @api.model
-    def create(self, vals):
-        if vals.get('believer_id'):
-            vals.update({
-                'believer_id': vals.get('believer_id')
-            })
-        return super(Users, self).create(vals)
