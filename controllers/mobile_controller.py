@@ -82,7 +82,7 @@ class MobileController(http.Controller):
                 'message': 'Error updating'
             }
 
-    @http.route('/believers', type='json', auth="user", methods=['GET'])
+    @http.route('/believers', type='json', auth="user", methods=['POST'])
     def GetBelievers(self, **post):
         model_believer = request.env['ev.believer']
         believers = model_believer.search([('active', '=', True)])
@@ -126,8 +126,8 @@ class MobileController(http.Controller):
                 'message': 'Error retrieving'
             }
 
-    @http.route('/believer/<int:believer_id>', type='json', auth="user", methods=['GET'])
-    def GetBeliever(self, believer_id):
+    @http.route('/believer/<int:believer_id>', type='json', auth="user", methods=['POST'])
+    def GetBeliever(self, believer_id, **post):
         model_believer = request.env['ev.believer']
         believer = model_believer.search([('id', '=', believer_id)])
 
@@ -170,7 +170,7 @@ class MobileController(http.Controller):
                 'message': 'Error retrieving'
             }
 
-    @http.route('/departments', type='json', auth="user", methods=['GET'])
+    @http.route('/departments', type='json', auth="user", methods=['POST'])
     def GetDepartments(self, **post):
         model_department = request.env['ev.department']
         departments = model_department.search([('active', '=', True)])
@@ -192,8 +192,8 @@ class MobileController(http.Controller):
                 'message': 'Error retrieving'
             }
 
-    @http.route('/news', type='json', auth="user", methods=['GET'])
-    def GetNews(self):
+    @http.route('/news', type='json', auth="user", methods=['POST'])
+    def GetNews(self, **post):
         model_news = request.env['ev.news']
         news = model_news.search([
             ('published', '=', True)
