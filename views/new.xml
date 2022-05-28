@@ -44,8 +44,8 @@
               attrs="{'invisible': [('state', '!=', 'draft')]}"
             />
             <button
-              name="draft"
-              string="Draft"
+              name="to_draft"
+              string="To Draft"
               type="object"
               groups="base.user_admin"
               attrs="{'invisible': [('state', '=', 'draft')]}"
