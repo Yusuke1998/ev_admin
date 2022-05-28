@@ -159,7 +159,9 @@ class MobileController(http.Controller):
     @http.route('/news', type='json', auth="user", methods=['GET'])
     def GetNews(self, **post):
         model_news = request.env['ev.news']
-        news = model_news.search([('active', '=', True)])
+        news = model_news.search([
+            ('published', '=', True)
+        ], order='date desc')
 
         if news:
             return json.dumps({

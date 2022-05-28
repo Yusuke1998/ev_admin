@@ -10,6 +10,15 @@
           <field 
             name="title"
           /> 
+          <field 
+            name="state"
+          />
+          <field 
+            name="date"
+          /> 
+          <field 
+            name="expiry_date"
+          /> 
         </tree>
       </field>
     </record>
@@ -19,12 +28,57 @@
       <field name="model">ev.new</field>
       <field name="arch" type="xml">
         <form>
+          <header>
+            <button
+              name="publish"
+              string="Publish"
+              type="object"
+              groups="base.user_admin"
+              attrs="{'invisible': [('state', '!=', 'draft')]}"
+            />
+            <button
+              name="delete"
+              string="Delete"
+              type="object"
+              groups="base.user_admin"
+              attrs="{'invisible': [('state', '!=', 'draft')]}"
+            />
+            <button
+              name="draft"
+              string="Draft"
+              type="object"
+              groups="base.user_admin"
+              attrs="{'invisible': [('state', '=', 'draft')]}"
+            />
+            <field 
+              name="state" 
+              widget="statusbar" 
+              statusbar_visible="draft,published,expired,deleted"
+            />
+          </header>
           <group>
             <field 
               name="title" 
             />
             <field 
               name="description" 
+            />
+            <field 
+              name="image" 
+              widget="image"
+              attrs="{'readonly': [('image_url', '!=', False)]}"
+            />
+            <field 
+              name="image_url" 
+              attrs="{'readonly': [('image', '!=', False)]}"
+            />
+            <field 
+              name="date" 
+              widget="date"
+            />
+            <field
+              name="expiry_date"
+              widget="date"
             />
           </group>
         </form>

@@ -13,6 +13,7 @@
     'depends': ['base', 'portal', 'website', 'address_venezuela'],
     'data': [
         # seeds
+        'data/ir_cron_data.xml',
         'data/departments.xml',
 
         # security
