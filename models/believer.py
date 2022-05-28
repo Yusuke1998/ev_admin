@@ -96,3 +96,46 @@ class Believer(models.Model):
         help='Active Believer',
     )
 
+    def getBelievers(self):
+        believers = self.search([])
+        
+        if len(believers) > 0:
+            return {
+                'status': 'success',
+                'message': 'Successfully retrieved',
+                'records': [{
+                        'id': believer.id,
+                        'name': believer.name,
+                        'identity': believer.identity,
+                        'state': {
+                            'id': believer.state_id.id,
+                            'name': believer.state_id.name
+                        },
+                        'municipality': {
+                            'id': believer.municipality_id.id,
+                            'name': believer.municipality_id.name
+                        },
+                        'parish': {
+                            'id': believer.parish_id.id,
+                            'name': believer.parish_id.name
+                        },
+                        'sector': believer.sector,
+                        'street': believer.street,
+                        'building': believer.building,
+                        'house': believer.house,
+                        'localphone_number': believer.localphone_number,
+                        'localphone_number': believer.cellphone_number,
+                        'department_ids': [{
+                            'id': department.id,
+                            'name': department.name
+                        } for department in believer.department_ids],
+                        'profile': believer.profile
+                } for believer in believers ]
+            }
+        else:
+            return {
+                'status': 'error',
+                'message': 'No records found',
+                'records': []
+            }
+
