@@ -25,18 +25,18 @@ class MobileController(http.Controller):
         })
 
         if believer:
-            return {
+            return json.dumps({
                 'status': 'success',
                 'message': 'Successfully registered',
                 'record': {
                     'id': believer.id
                 }
-            }
+            })
         else:
-            return {
+            return json.dumps({
                 'status': 'error',
                 'message': 'Error registering'
-            }
+            })
 
     @http.route('/update/believer/<int:believer_id>', type='json', auth="user", methods=['POST'])
     def UpdateBeliever(self, believer_id, **post):
@@ -69,18 +69,18 @@ class MobileController(http.Controller):
                         'password': post.get('password')
                     })
 
-            return {
+            return json.dumps({
                 'status': 'success',
                 'message': 'Successfully updated',
                 'record': {
                     'id': believer.id
                 }
-            }
+            })
         else:
-            return {
+            return json.dumps({
                 'status': 'error',
                 'message': 'Error updating'
-            }
+            })
 
     @http.route('/believers', type='json', auth="user", methods=['POST'])
     def GetBelievers(self, **post):
@@ -88,7 +88,7 @@ class MobileController(http.Controller):
         believers = model_believer.search([('active', '=', True)])
 
         if believers:
-            return {
+            return json.dumps({
                 'status': 'success',
                 'message': 'Successfully retrieved',
                 'records': [{
@@ -119,12 +119,12 @@ class MobileController(http.Controller):
                         } for department in believer.department_ids],
                         'profile': believer.profile
                 } for believer in believers ]
-            }
+            })
         else:
-            return {
+            return json.dumps({
                 'status': 'error',
                 'message': 'Error retrieving'
-            }
+            })
 
     @http.route('/believer/<int:believer_id>', type='json', auth="user", methods=['POST'])
     def GetBeliever(self, believer_id, **post):
@@ -132,7 +132,7 @@ class MobileController(http.Controller):
         believer = model_believer.search([('id', '=', believer_id)])
 
         if believer:
-            return {
+            return json.dumps({
                 'status': 'success',
                 'message': 'Successfully retrieved',
                 'record': {
@@ -163,12 +163,12 @@ class MobileController(http.Controller):
                     } for department in believer.department_ids],
                     'profile': believer.profile                    
                 }
-            }
+            })
         else:
-            return {
+            return json.dumps({
                 'status': 'error',
                 'message': 'Error retrieving'
-            }
+            })
 
     @http.route('/departments', type='json', auth="user", methods=['POST'])
     def GetDepartments(self, **post):
@@ -176,7 +176,7 @@ class MobileController(http.Controller):
         departments = model_department.search([('active', '=', True)])
 
         if departments:
-            return {
+            return json.dumps({
                 'status': 'success',
                 'message': 'Successfully retrieved',
                 'records': [
@@ -185,12 +185,12 @@ class MobileController(http.Controller):
                         'name': department.name
                     } for department in departments
                 ]
-            }
+            })
         else:
-            return {
+            return json.dumps({
                 'status': 'error',
                 'message': 'Error retrieving'
-            }
+            })
 
     @http.route('/news', type='json', auth="user", methods=['POST'])
     def GetNews(self, **post):
@@ -200,7 +200,7 @@ class MobileController(http.Controller):
         ], order='date desc')
 
         if news:
-            return {
+            return json.dumps({
                 'status': 'success',
                 'message': 'Successfully retrieved',
                 'records': [{
@@ -213,9 +213,9 @@ class MobileController(http.Controller):
                     'image_url': new.image_url,
                     'state': new.state
                 } for new in news]
-            }
+            })
         else:
-            return {
+            return json.dumps({
                 'status': 'error',
                 'message': 'Error retrieving'
-            }
+            })
