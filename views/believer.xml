@@ -38,6 +38,9 @@
             <field 
               name="name" 
             />
+            <field 
+              name="identity" 
+            />
             <field name="country_id" attrs="{
               'readonly':True,
               'invisible':True
