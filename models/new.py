@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+from email.policy import default
 import logging
 from odoo import fields, models, api, _
 from odoo.exceptions import UserError
@@ -25,6 +26,7 @@ class News(models.Model):
         string='Date',
         help='Date of News',
         required=True,
+        default=fields.Date.today(),
     )
 
     expiry_date = fields.Date(
@@ -68,19 +70,17 @@ class News(models.Model):
         ])
         for record in records:
             record.state = 'expired'
-            record.active = False
 
     def publish(self):
         if self.state == 'draft':
             self.state = 'published'
-            self.active = True
         else:
             raise UserError(_('News must be in draft state to publish'))
 
     def to_draft(self):
         if self.state != 'draft':
             self.state = 'draft'
-            self.active = False
+            self.active = True
         else:
             raise UserError(_('News must be in published state to draft'))
 
