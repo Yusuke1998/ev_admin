@@ -205,7 +205,7 @@ class MobileController(http.Controller):
 
     @http.route('/news', type='json', auth="user", methods=['POST'])
     def GetNews(self, **post):
-        model_news = request.env['ev.news']
+        model_news = request.env['ev.new']
         news = model_news.search([
             ('published', '=', True)
         ], order='date desc')
@@ -218,6 +218,7 @@ class MobileController(http.Controller):
                     'id': new.id,
                     'title': new.title,
                     'description': new.description,
+                    'content': new.content,
                     'date': new.date,
                     'expiry_date': new.expiry_date,
                     'image': new.image,
