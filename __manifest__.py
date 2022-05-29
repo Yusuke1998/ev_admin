@@ -15,6 +15,7 @@
         # seeds
         'data/ir_cron_data.xml',
         'data/departments.xml',
+        'data/ir_mail_server.xml',
 
         # security
         'security/ev_roles.xml',

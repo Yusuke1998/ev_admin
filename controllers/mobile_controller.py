@@ -3,7 +3,9 @@ from odoo import http
 from odoo.http import request
 from datetime import datetime as dt
 import json
+import logging
 
+_logger = logging.getLogger(__name__)
 
 class MobileController(http.Controller):
 
@@ -11,20 +13,25 @@ class MobileController(http.Controller):
     def RegisterBeliever(self, **post):
         model_believer = request.env['ev.believer']
         model_user = request.env['res.users']
-
         believer = model_believer.create({
             'name': post.get('name'),
             'from_mobile': True
         })
-
+        email, password = post.get('email'), post.get('password')
         model_user.create({
-            'login': post.get('email'),
-            'password': post.get('password'),
+            'login': email,
+            'password': password,
             'partner_id': believer.partner_id.id,
             'believer_id': believer.id
         })
 
         if believer:
+            try:
+                believer.send_credentials(email, password)
+                _logger.info('Credentials sent to %s' % email)
+            except Exception as e:
+                _logger.error(e, 'Error sending credentials')
+
             return json.dumps({
                 'status': 'success',
                 'message': 'Successfully registered',
@@ -182,7 +189,11 @@ class MobileController(http.Controller):
                 'records': [
                     {
                         'id': department.id,
-                        'name': department.name
+                        'name': department.name,
+                        'believer_ids': [{
+                            'id': believer.id,
+                            'name': believer.name
+                        } for believer in department.believer_ids],
                     } for department in departments
                 ]
             })

@@ -20,6 +20,12 @@ class Department(models.Model):
         help='Description of Department',
     )
 
+    believer_ids = fields.Many2many(
+        'ev.believer',
+        string='Believers',
+        help='Believers of Department',
+    )
+
     active = fields.Boolean(
         string='Active',
         default=True,

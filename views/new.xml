@@ -64,6 +64,9 @@
               name="description" 
             />
             <field 
+              name="content" widget="html" 
+            />
+            <field 
               name="image" 
               widget="image"
               attrs="{'readonly': [('image_url', '!=', False)]}"

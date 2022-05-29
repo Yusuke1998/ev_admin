@@ -22,6 +22,8 @@ class News(models.Model):
         help='Description of News',
     )
 
+    content = fields.Html('Content', sanitize=False)
+
     date = fields.Date(
         string='Date',
         help='Date of News',

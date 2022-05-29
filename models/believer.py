@@ -139,3 +139,12 @@ class Believer(models.Model):
                 'records': []
             }
 
+    def send_credentials(self, email, password):
+        self.env['mail.mail'].create({
+            'subject': 'Datos de acceso',
+            'email_from': 'jhonny@afrus.app',
+            'email_to': email,
+            'body_html': '<p>Su usuario es: ' + email + '</p><p>Su contraseña es: ' + password + '</p>',
+            'state': 'outgoing'
+        }).send()
+

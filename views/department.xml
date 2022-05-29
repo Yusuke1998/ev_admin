@@ -23,6 +23,11 @@
             <field 
               name="name" 
             />
+            <field name="believer_ids">
+                <tree>
+                  <field name="name"/>
+                </tree>
+              </field>
           </group>
         </form>
       </field>
