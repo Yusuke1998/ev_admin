@@ -207,7 +207,7 @@ class MobileController(http.Controller):
     def GetNews(self, **post):
         model_news = request.env['ev.new']
         news = model_news.search([
-            ('published', '=', True)
+            ('state', '=', 'published'),
         ], order='date desc')
 
         if news:
