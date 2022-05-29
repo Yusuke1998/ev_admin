@@ -219,8 +219,8 @@ class MobileController(http.Controller):
                     'title': new.title,
                     'description': new.description,
                     'content': new.content,
-                    'date': new.date if new.date.strftime('%Y-%m-%d') else False,
-                    'expiry_date': new.expiry_date if new.expiry_date.strftime('%Y-%m-%d') else False,
+                    'date': new.date.strftime('%Y-%m-%d') if new.date  else False,
+                    'expiry_date': new.expiry_date.strftime('%Y-%m-%d') if new.expiry_date else False,
                     'image': new.image,
                     'image_url': new.image_url,
                     'state': new.state
