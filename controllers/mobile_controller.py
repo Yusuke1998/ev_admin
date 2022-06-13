@@ -202,6 +202,30 @@ class MobileController(http.Controller):
                 'status': 'error',
                 'message': 'Error retrieving'
             })
+    
+    @http.route('/department/<int:department_id>', type='json', auth="user", methods=['POST'])
+    def GetDepartment(self, department_id, **post):
+        model_department = request.env['ev.department']
+        department = model_department.search([('id', '=', department_id)])
+
+        if department:
+            return json.dumps({
+                'status': 'success',
+                'message': 'Successfully retrieved',
+                'record': {
+                    'id': department.id,
+                    'name': department.name,
+                    'believer_ids': [{
+                        'id': believer.id,
+                        'name': believer.name
+                    } for believer in department.believer_ids],
+                }
+            })
+        else:
+            return json.dumps({
+                'status': 'error',
+                'message': 'Error retrieving'
+            })
 
     @http.route('/news', type='json', auth="user", methods=['POST'])
     def GetNews(self, **post):
@@ -225,6 +249,33 @@ class MobileController(http.Controller):
                     'image_url': new.image_url,
                     'state': new.state
                 } for new in news]
+            })
+        else:
+            return json.dumps({
+                'status': 'error',
+                'message': 'Error retrieving'
+            })
+
+    @http.route('/new/<int:new_id>', type='json', auth="user", methods=['POST'])
+    def GetNew(self, new_id, **post):
+        model_news = request.env['ev.new']
+        new = model_news.search([('id', '=', new_id)])
+
+        if new:
+            return json.dumps({
+                'status': 'success',
+                'message': 'Successfully retrieved',
+                'record': {
+                    'id': new.id,
+                    'title': new.title,
+                    'description': new.description,
+                    'content': new.content,
+                    'date': new.date.strftime('%Y-%m-%d') if new.date  else False,
+                    'expiry_date': new.expiry_date.strftime('%Y-%m-%d') if new.expiry_date else False,
+                    'image': new.image,
+                    'image_url': new.image_url,
+                    'state': new.state
+                }
             })
         else:
             return json.dumps({
