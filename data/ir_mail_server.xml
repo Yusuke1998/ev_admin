@@ -5,8 +5,8 @@
             <field name="name">Email Server EV admin</field>
             <field name="smtp_host">smtp.gmail.com</field>
             <field name="smtp_port">465</field>
-            <field name="smtp_user">livinghope.app</field>
-            <field name="smtp_pass">2022livinghope</field>
+            <field name="smtp_user">livinghope.app@gmail.com</field>
+            <field name="smtp_pass">rbzgcwlqknegzltg</field>
             <field name="smtp_encryption">ssl</field>
         </record>
     </data>
