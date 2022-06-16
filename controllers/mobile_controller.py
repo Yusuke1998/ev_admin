@@ -18,11 +18,14 @@ class MobileController(http.Controller):
             'from_mobile': True
         })
         email, password = post.get('email'), post.get('password')
-        model_user.create({
+        user = model_user.create({
             'login': email,
             'password': password,
             'partner_id': believer.partner_id.id,
             'believer_id': believer.id
+        })
+        user.write({
+            'groups_id': [(4, request.env.ref('ev_admin.group_rol_believer').id)]
         })
 
         if believer:
