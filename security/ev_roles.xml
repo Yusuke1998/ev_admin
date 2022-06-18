@@ -7,8 +7,14 @@
         </record> 
 
         <!-- ev user -->
-        <record  model="res.groups" id="group_rol_believer">
+        <record model="res.groups" id="group_rol_believer">
             <field name="name">believer</field>
+            <field name="category_id" ref="ev_admin.ev_category" />
+        </record>
+
+        <!-- admin -->
+        <record model="res.groups" id="group_rol_admin">
+            <field name="name">admin</field>
             <field name="category_id" ref="ev_admin.ev_category" />
         </record>
     </data>

@@ -14,6 +14,9 @@
             name="state"
           />
           <field 
+            name="category_id"
+          />
+          <field 
             name="date"
           /> 
           <field 
@@ -64,6 +67,9 @@
               name="description" 
             />
             <field 
+              name="category_id"
+            />
+            <field 
               name="content" widget="html" 
             />
             <field 
@@ -103,8 +109,16 @@
       name="News" 
       id="ev_admin_menu_news" 
       parent="ev_admin.ev_menu_root" 
-      action="ev_news_action_window" 
       sequence="3"
+      groups="base.user_admin"
+    />
+
+    <menuitem 
+      name="News" 
+      id="ev_admin_menu_news_index" 
+      parent="ev_admin.ev_admin_menu_news" 
+      action="ev_news_action_window" 
+      sequence="1"
       groups="base.user_admin"
     />
   </data>

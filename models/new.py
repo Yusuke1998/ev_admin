@@ -46,6 +46,12 @@ class News(models.Model):
         help='Image URL of News',
     )
 
+    category_id = fields.Many2one(
+        'ev.new.category',
+        string='Category',
+        help='Category of News',
+    )
+
     state = fields.Selection(
         string='Status',
         selection=[
@@ -64,8 +70,14 @@ class News(models.Model):
         help='Active News',
     )
 
+    @api.model
+    def create(self, vals):
+        if not vals.get('category_id', False):
+            vals['category_id'] = self.env.ref('ev_new.new_category1').id
+        return super().create(vals)
+
     def verify_expiry_cron(self):
-        records = self.search([
+        records = self.env['ev.new'].search([
             ('expiry_date', '!=', False),
             ('expiry_date', '<=', fields.Date.today()),
             ('state', '=', 'published'),
@@ -92,3 +104,43 @@ class News(models.Model):
             self.active = False
         else:
             raise UserError(_('News must be in draft state to delete'))
+
+class NewsCategory(models.Model):
+    _name = 'ev.new.category'
+    _description = 'Model for the News Category'
+    _rec_name = 'name'
+
+    name = fields.Char(
+        string='Name',
+        required=True,
+        help='Name of News Category',
+    )
+
+    description = fields.Text(
+        string='Description',
+        help='Description of News Category',
+    )
+
+    active = fields.Boolean(
+        string='Active',
+        default=True,
+        help='Active News Category',
+    )
+
+    @api.model
+    def create(self, vals):
+        if vals.get('name', False):
+            vals['name'] = vals['name'].upper()
+        return super().create(vals)
+
+    def deactivate(self):
+        if self.active:
+            self.active = False
+        else:
+            raise UserError(_('News Category must be active to delete'))
+
+    def to_active(self):
+        if not self.active:
+            self.active = True
+        else:
+            raise UserError(_('News Category must be inactive to undelete'))

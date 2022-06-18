@@ -29,11 +29,10 @@ class MobileController(http.Controller):
         })
 
         if believer:
-            try:
-                believer.send_credentials(email, password)
+            if believer.send_credentials(email, password):
                 _logger.info('Credentials sent to %s' % email)
-            except Exception as e:
-                _logger.error(e, 'Error sending credentials')
+            else:
+                _logger.error('Error sending credentials to %s' % email)
 
             return json.dumps({
                 'status': 'success',
@@ -250,6 +249,10 @@ class MobileController(http.Controller):
                     'expiry_date': new.expiry_date.strftime('%Y-%m-%d') if new.expiry_date else False,
                     'image': new.image,
                     'image_url': new.image_url,
+                    'category': {
+                        'id': new.category_id.id,
+                        'name': new.category_id.name
+                    },
                     'state': new.state
                 } for new in news]
             })
@@ -277,6 +280,10 @@ class MobileController(http.Controller):
                     'expiry_date': new.expiry_date.strftime('%Y-%m-%d') if new.expiry_date else False,
                     'image': new.image,
                     'image_url': new.image_url,
+                    'category': {
+                        'id': new.category_id.id,
+                        'name': new.category_id.name
+                    },
                     'state': new.state
                 }
             })

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <record id="new_category1" model="ev.new.category">
+            <field name="name">GENERAL</field>  
+            <field name="description">Categoría general</field>
+        </record>
+    </data>
+</odoo>

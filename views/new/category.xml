@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+  <data>
+
+    <record model="ir.ui.view" id="ev_news_list">
+      <field name="name">News</field>
+      <field name="model">ev.new.category</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field 
+            name="name"
+          /> 
+          <field 
+            name="active"
+          />
+        </tree>
+      </field>
+    </record>
+
+    <record model="ir.ui.view" id="ev_news_form">
+      <field name="name">News</field>
+      <field name="model">ev.new.category</field>
+      <field name="arch" type="xml">
+        <form>
+          <header>
+            <button
+              name="deactivate"
+              string="Delete"
+              type="object"
+              groups="base.user_admin"
+              attrs="{'invisible': [('active', '=', False)]}"
+            />
+            <button
+              name="to_active"
+              string="Active"
+              type="object"
+              groups="base.user_admin"
+              attrs="{'invisible': [('active', '=', True)]}"
+            />
+          </header>
+          <group>
+            <field 
+              name="name" 
+            />
+            <field 
+              name="description" 
+            />
+            <field 
+                name="active"
+                invisible="1"
+            />
+          </group>
+        </form>
+      </field>
+    </record>
+
+    <record model="ir.actions.act_window" id="ev_news_category_action_window">
+      <field name="name">News Category</field>
+      <field name="res_model">ev.new.category</field>
+      <field name="view_mode">tree,form</field>
+      <field name="help" type="html">
+        <p class="oe_view_nocontent_create">
+          from this module, news records are created
+        </p>
+      </field>
+    </record>
+
+    <menuitem 
+      name="Categories" 
+      id="ev_admin_menu_news_category" 
+      parent="ev_admin.ev_admin_menu_news" 
+      action="ev_news_category_action_window" 
+      sequence="2"
+      groups="base.user_admin"
+    />
+  </data>
+
+</odoo>
