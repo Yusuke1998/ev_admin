@@ -1,0 +1,1261 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* ev_admin
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 12.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-06-18 22:17+0000\n"
+"PO-Revision-Date: 2022-06-18 22:17+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: ev_admin
+#: model:mail.template,body_html:ev_admin.email_credentials
+msgid "\n"
+"				\n"
+"					<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\">\n"
+"					<html>\n"
+"					<head>\n"
+"						<!-- Compiled with Bootstrap Email version: 1.2.0 --><meta http-equiv=\"x-ua-compatible\" content=\"ie=edge\">\n"
+"						<meta name=\"x-apple-disable-message-reformatting\">\n"
+"						<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n"
+"						<meta name=\"format-detection\" content=\"telephone=no, date=no, address=no, email=no\">\n"
+"						<meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\">\n"
+"						<style type=\"text/css\">\n"
+"						body,table,td{font-family:Helvetica,Arial,sans-serif !important}.ExternalClass{width:100%}.ExternalClass,.ExternalClass p,.ExternalClass span,.ExternalClass font,.ExternalClass td,.ExternalClass div{line-height:150%}a{text-decoration:none}*{color:inherit}a[x-apple-data-detectors],u+#body a,#MessageViewBody a{color:inherit;text-decoration:none;font-size:inherit;font-family:inherit;font-weight:inherit;line-height:inherit}img{-ms-interpolation-mode:bicubic}table:not([class^=s-]){font-family:Helvetica,Arial,sans-serif;mso-table-lspace:0pt;mso-table-rspace:0pt;border-spacing:0px;border-collapse:collapse}table:not([class^=s-]) td{border-spacing:0px;border-collapse:collapse}@media screen and (max-width: 600px){.w-full,.w-full>tbody>tr>td{width:100% !important}*[class*=s-lg-]>tbody>tr>td{font-size:0 !important;line-height:0 !important;height:0 !important}.s-2>tbody>tr>td{font-size:8px !important;line-height:8px !important;height:8px !important}.s-5>tbody>tr>td{font-size:20px !important;line-height:20px !important;height:20px !important}.s-10>tbody>tr>td{font-size:40px !important;line-height:40px !important;height:40px !important}}\n"
+"						</style>\n"
+"					</head>\n"
+"					<body class=\"bg-light\" style=\"outline: 0; width: 100%; min-width: 100%; height: 100%; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; font-family: Helvetica, Arial, sans-serif; line-height: 24px; font-weight: normal; font-size: 16px; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; color: #000000; margin: 0; padding: 0; border-width: 0;\" bgcolor=\"#f7fafc\">\n"
+"						<table class=\"bg-light body\" valign=\"top\" role=\"presentation\" border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"outline: 0; width: 100%; min-width: 100%; height: 100%; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; font-family: Helvetica, Arial, sans-serif; line-height: 24px; font-weight: normal; font-size: 16px; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; color: #000000; margin: 0; padding: 0; border-width: 0;\" bgcolor=\"#f7fafc\">\n"
+"						<tbody>\n"
+"							<tr>\n"
+"							<td valign=\"top\" style=\"line-height: 24px; font-size: 16px; margin: 0;\" align=\"left\" bgcolor=\"#f7fafc\">\n"
+"								<table class=\"container\" role=\"presentation\" border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"width: 100%;\">\n"
+"								<tbody>\n"
+"									<tr>\n"
+"									<td align=\"center\" style=\"line-height: 24px; font-size: 16px; margin: 0; padding: 0 16px;\">\n"
+"										<!--[if (gte mso 9)|(IE)]>\n"
+"										<table align=\"center\" role=\"presentation\">\n"
+"											<tbody>\n"
+"											<tr>\n"
+"												<td width=\"600\">\n"
+"										<![endif]-->\n"
+"										<table align=\"center\" role=\"presentation\" border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"width: 100%; max-width: 600px; margin: 0 auto;\">\n"
+"										<tbody>\n"
+"											<tr>\n"
+"											<td style=\"line-height: 24px; font-size: 16px; margin: 0;\" align=\"left\">\n"
+"												<table class=\"s-10 w-full\" role=\"presentation\" border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"width: 100%;\" width=\"100%\">\n"
+"												<tbody>\n"
+"													<tr>\n"
+"													<td style=\"line-height: 40px; font-size: 40px; width: 100%; height: 40px; margin: 0;\" align=\"left\" width=\"100%\" height=\"40\">\n"
+"														&#160;\n"
+"													</td>\n"
+"													</tr>\n"
+"												</tbody>\n"
+"												</table>\n"
+"												<table class=\"card\" role=\"presentation\" border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"border-radius: 6px; border-collapse: separate !important; width: 100%; overflow: hidden; border: 1px solid #e2e8f0;\" bgcolor=\"#ffffff\">\n"
+"												<tbody>\n"
+"													<tr>\n"
+"													<td style=\"line-height: 24px; font-size: 16px; width: 100%; margin: 0;\" align=\"left\" bgcolor=\"#ffffff\">\n"
+"														<table class=\"card-body\" role=\"presentation\" border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"width: 100%;\">\n"
+"														<tbody>\n"
+"															<tr>\n"
+"															<td style=\"line-height: 24px; font-size: 16px; width: 100%; margin: 0; padding: 20px;\" align=\"left\">\n"
+"																<h1 class=\"h3  text-center\" style=\"padding-top: 0; padding-bottom: 0; font-weight: 500; vertical-align: baseline; font-size: 28px; line-height: 33.6px; margin: 0;\" align=\"center\">Bienvenido a Living Hope App</h1>\n"
+"																<table class=\"s-2 w-full\" role=\"presentation\" border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"width: 100%;\" width=\"100%\">\n"
+"																<tbody>\n"
+"																	<tr>\n"
+"																	<td style=\"line-height: 8px; font-size: 8px; width: 100%; height: 8px; margin: 0;\" align=\"left\" width=\"100%\" height=\"8\">\n"
+"																		&#160;\n"
+"																	</td>\n"
+"																	</tr>\n"
+"																</tbody>\n"
+"																</table>\n"
+"																<h5 class=\"text-gray-700 text-center\" style=\"color: #4a5568; padding-top: 0; padding-bottom: 0; font-weight: 500; vertical-align: baseline; font-size: 20px; line-height: 24px; margin: 0;\" align=\"center\">Aqui se adjuntan tus credenciales para iniciar sesion. <br>\n"
+"																<small>Por favor, no compartas este email.</small>\n"
+"																</h5>\n"
+"																<table class=\"s-5 w-full\" role=\"presentation\" border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"width: 100%;\" width=\"100%\">\n"
+"																<tbody>\n"
+"																	<tr>\n"
+"																	<td style=\"line-height: 20px; font-size: 20px; width: 100%; height: 20px; margin: 0;\" align=\"left\" width=\"100%\" height=\"20\">\n"
+"																		&#160;\n"
+"																	</td>\n"
+"																	</tr>\n"
+"																</tbody>\n"
+"																</table>\n"
+"																<table class=\"hr\" role=\"presentation\" border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"width: 100%;\">\n"
+"																<tbody>\n"
+"																	<tr>\n"
+"																	<td style=\"line-height: 24px; font-size: 16px; border-top-width: 1px; border-top-color: #e2e8f0; border-top-style: solid; height: 1px; width: 100%; margin: 0;\" align=\"left\">\n"
+"																	</td>\n"
+"																	</tr>\n"
+"																</tbody>\n"
+"																</table>\n"
+"																<table class=\"s-5 w-full\" role=\"presentation\" border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"width: 100%;\" width=\"100%\">\n"
+"																<tbody>\n"
+"																	<tr>\n"
+"																	<td style=\"line-height: 20px; font-size: 20px; width: 100%; height: 20px; margin: 0;\" align=\"left\" width=\"100%\" height=\"20\">\n"
+"																		&#160;\n"
+"																	</td>\n"
+"																	</tr>\n"
+"																</tbody>\n"
+"																</table>\n"
+"																<div class=\"space-y-3\">\n"
+"																<ul class=\"list-group\" style=\"list-style-type: none !important;\">\n"
+"																	<li class=\"list-group-item\">Correo electronico: <span class=\"credentials\" style=\"color: darkorange !important; text-decoration: none !important;\">${ctx['email']}</span>\n"
+"																	</li>\n"
+"																	<li class=\"list-group-item\">Contrase&#241;a: <span class=\"credentials\" style=\"color: darkorange !important; text-decoration: none !important;\">${ctx['password']}</span>\n"
+"																	</li>\n"
+"																</ul>\n"
+"																</div>\n"
+"																<table class=\"s-5 w-full\" role=\"presentation\" border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"width: 100%;\" width=\"100%\">\n"
+"																<tbody>\n"
+"																	<tr>\n"
+"																	<td style=\"line-height: 20px; font-size: 20px; width: 100%; height: 20px; margin: 0;\" align=\"left\" width=\"100%\" height=\"20\">\n"
+"																		&#160;\n"
+"																	</td>\n"
+"																	</tr>\n"
+"																</tbody>\n"
+"																</table>\n"
+"																<table class=\"hr\" role=\"presentation\" border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"width: 100%;\">\n"
+"																<tbody>\n"
+"																	<tr>\n"
+"																	<td style=\"line-height: 24px; font-size: 16px; border-top-width: 1px; border-top-color: #e2e8f0; border-top-style: solid; height: 1px; width: 100%; margin: 0;\" align=\"left\">\n"
+"																	</td>\n"
+"																	</tr>\n"
+"																</tbody>\n"
+"																</table>\n"
+"																<table class=\"s-5 w-full\" role=\"presentation\" border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"width: 100%;\" width=\"100%\">\n"
+"																<tbody>\n"
+"																	<tr>\n"
+"																	<td style=\"line-height: 20px; font-size: 20px; width: 100%; height: 20px; margin: 0;\" align=\"left\" width=\"100%\" height=\"20\">\n"
+"																		&#160;\n"
+"																	</td>\n"
+"																	</tr>\n"
+"																</tbody>\n"
+"																</table>\n"
+"															</td>\n"
+"															</tr>\n"
+"														</tbody>\n"
+"														</table>\n"
+"													</td>\n"
+"													</tr>\n"
+"												</tbody>\n"
+"												</table>\n"
+"												<table class=\"s-10 w-full\" role=\"presentation\" border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"width: 100%;\" width=\"100%\">\n"
+"												<tbody>\n"
+"													<tr>\n"
+"													<td style=\"line-height: 40px; font-size: 40px; width: 100%; height: 40px; margin: 0;\" align=\"left\" width=\"100%\" height=\"40\">\n"
+"														&#160;\n"
+"													</td>\n"
+"													</tr>\n"
+"												</tbody>\n"
+"												</table>\n"
+"											</td>\n"
+"											</tr>\n"
+"										</tbody>\n"
+"										</table>\n"
+"										<!--[if (gte mso 9)|(IE)]>\n"
+"										</td>\n"
+"									</tr>\n"
+"									</tbody>\n"
+"								</table>\n"
+"										<![endif]-->\n"
+"									</td>\n"
+"									</tr>\n"
+"								</tbody>\n"
+"								</table>\n"
+"							</td>\n"
+"							</tr>\n"
+"						</tbody>\n"
+"						</table>\n"
+"					</body>\n"
+"					</html>\n"
+"				\n"
+"			"
+msgstr ""
+
+#. module: ev_admin
+#: model:ir.model.fields,field_description:ev_admin.field_ev_believer__access_warning
+msgid "Access warning"
+msgstr "Alerta de acceso"
+
+#. module: ev_admin
+#: model:ir.model.fields,field_description:ev_admin.field_ev_believer__message_needaction
+msgid "Action Needed"
+msgstr "Acción Necesaria"
+
+#. module: ev_admin
+#: model:ir.model.fields,field_description:ev_admin.field_ev_believer__active
+#: model:ir.model.fields,field_description:ev_admin.field_ev_department__active
+#: model:ir.model.fields,field_description:ev_admin.field_ev_new__active
+#: model:ir.model.fields,field_description:ev_admin.field_ev_new_category__active
+#: model_terms:ir.ui.view,arch_db:ev_admin.ev_news_form
+msgid "Active"
+msgstr "Activo"
+
+#. module: ev_admin
+#: model:ir.model.fields,help:ev_admin.field_ev_believer__active
+msgid "Active Believer"
+msgstr "Creyente activo"
+
+#. module: ev_admin
+#: model:ir.model.fields,help:ev_admin.field_ev_department__active
+msgid "Active Department"
+msgstr "Departamento activo"
+
+#. module: ev_admin
+#: model:ir.model.fields,help:ev_admin.field_ev_new__active
+msgid "Active News"
+msgstr "Noticias activas"
+
+#. module: ev_admin
+#: model:ir.model.fields,help:ev_admin.field_ev_new_category__active
+msgid "Active News Category"
+msgstr "Categoría de noticias activas"
+
+#. module: ev_admin
+#: model:ir.model.fields,field_description:ev_admin.field_ev_believer__activity_ids
+msgid "Activities"
+msgstr "Actividades"
+
+#. module: ev_admin
+#: model:ir.model.fields,field_description:ev_admin.field_ev_believer__activity_state
+msgid "Activity State"
+msgstr "Estado de la actividad"
+
+#. module: ev_admin
+#: model:ir.model.fields,field_description:ev_admin.field_ev_believer__additional_info
+msgid "Additional info"
+msgstr "Información adicional"
+
+#. module: ev_admin
+#: model:ir.model.fields,field_description:ev_admin.field_ev_believer__type
+#: model:ir.model.fields,field_description:ev_admin.field_res_partner__type
+#: model:ir.model.fields,field_description:ev_admin.field_res_users__type
+msgid "Address Type"
+msgstr "Tipo de dirección"
+
+#. module: ev_admin
+#: model:ir.ui.menu,name:ev_admin.ev_menu_root
+msgid "Admin believer"
+msgstr "Administrador de Creyentes"
+
+#. module: ev_admin
+#: model:ir.model.fields,help:ev_admin.field_ev_believer__lang
+msgid "All the emails and documents sent to this contact will be translated in this language."
+msgstr "Todos los correos electrónicos y documentos enviados a este contacto se traducirán en este idioma."
+
+#. module: ev_admin
+#: model:ir.model.fields,field_description:ev_admin.field_ev_believer__message_attachment_count
+msgid "Attachment Count"
+msgstr "Conteo de archivos adjuntos"
+
+#. module: ev_admin
+#: model:ir.model.fields,field_description:ev_admin.field_ev_believer__bank_ids
+msgid "Banks"
+msgstr "Bancos"
+
+#. module: ev_admin
+#: model:ir.model.fields,field_description:ev_admin.field_ev_believer__barcode
+msgid "Barcode"
+msgstr "Código de barras"
+
+#. module: ev_admin
+#: model:ir.actions.act_window,name:ev_admin.ev_believer_action_window
+#: model:ir.model.fields,field_description:ev_admin.field_res_users__believer_id
+#: model:ir.ui.menu,name:ev_admin.ev_admin_menu_believer
+#: model:ir.ui.menu,name:ev_admin.ev_menu_believer
+msgid "Believer"
+msgstr "Creyente"
+
+#. module: ev_admin
+#: model:ir.model.fields,help:ev_admin.field_res_users__believer_id
+msgid "Believer of User"
+msgstr "Usuario del Creyente"
+
+#. module: ev_admin
+#: model:ir.model.fields,field_description:ev_admin.field_ev_department__believer_ids
+msgid "Believers"
+msgstr "Creyentes"
+
+#. module: ev_admin
+#: model:ir.model.fields,help:ev_admin.field_ev_department__believer_ids
+msgid "Believers of Department"
+msgstr "Creyentes del departamento"
+
+#. module: ev_admin
+#: model:ir.model.fields,field_description:ev_admin.field_ev_believer__is_blacklisted
+msgid "Blacklist"
+msgstr "Lista negra"
+
+#. module: ev_admin
+#: model:ir.model.fields,field_description:ev_admin.field_ev_believer__message_bounce
+msgid "Bounce"
+msgstr "Rebote"
+
+#. module: ev_admin
+#: model:ir.model.fields,help:ev_admin.field_ev_believer__building
+msgid "Building o Local of Residence"
+msgstr "Edificio o Local de Residencia"
+
+#. module: ev_admin
+#: model:ir.ui.menu,name:ev_admin.ev_admin_menu_news_category
+msgid "Categories"
+msgstr "Categorias"
+
+#. module: ev_admin
+#: model:ir.model.fields,field_description:ev_admin.field_ev_new__category_id
+msgid "Category"
+msgstr "Categoría"
+
+#. module: ev_admin
+#: model:ir.model.fields,help:ev_admin.field_ev_new__category_id
+msgid "Category of News"
+msgstr "Categoria de noticias"
+
+#. module: ev_admin
+#: model:ir.model.fields,field_description:ev_admin.field_ev_believer__cellphone_number
+msgid "Cell Telephone"
+msgstr "Telefono celular"
+
+#. module: ev_admin
+#: model:ir.model.fields,help:ev_admin.field_ev_believer__cellphone_number
+msgid "Cell Telephone Number"
+msgstr "Numero de telefono celular"
+
+#. module: ev_admin
+#: model:ir.model.fields,field_description:ev_admin.field_ev_believer__channel_ids
+msgid "Channels"
+msgstr "Canales"
+
+#. module: ev_admin
+#: model:ir.model.fields,help:ev_admin.field_ev_believer__is_company
+msgid "Check if the contact is a company, otherwise it is a person"
+msgstr "Marque esta casilla si el contacto es una compañía. En caso contrario, es una persona."
+
+#. module: ev_admin
+#: model:ir.model.fields,help:ev_admin.field_ev_believer__customer
+msgid "Check this box if this contact is a customer. It can be selected in sales orders."
+msgstr "Marque esta casilla si este contacto es un cliente. Puede ser seleccionado en órdenes de venta. "
+
+#. module: ev_admin
+#: model:ir.model.fields,help:ev_admin.field_ev_believer__supplier
+msgid "Check this box if this contact is a vendor. It can be selected in purchase orders."
+msgstr "Marque esta casilla si este contacto es un proveedor. Puede ser seleccionado en órdenes de compra. "
+
+#. module: ev_admin
+#: model:ir.model.fields,help:ev_admin.field_ev_believer__employee
+msgid "Check this box if this contact is an Employee."
+msgstr "Marque si el contacto es un empleado"
+
+#. module: ev_admin
+#: model:ir.model.fields,help:ev_admin.field_ev_believer__believer
+#: model:ir.model.fields,help:ev_admin.field_res_partner__believer
+#: model:ir.model.fields,help:ev_admin.field_res_users__believer
+msgid "Check this box if this contact is an believer."
+msgstr "Marque esta casilla si este contacto es un creyente"
+
+#. module: ev_admin
+#: model:ir.model.fields,field_description:ev_admin.field_ev_believer__city
+msgid "City"
+msgstr "Ciudad"
+
+#. module: ev_admin
+#: model:ir.model.fields,field_description:ev_admin.field_ev_believer__color
+msgid "Color Index"
+msgstr "Índice de Colores"
+
+#. module: ev_admin
+#: model:ir.model.fields,field_description:ev_admin.field_ev_believer__commercial_partner_id
+msgid "Commercial Entity"
+msgstr "Entidad comercial"
+
+#. module: ev_admin
+#: model:ir.model.fields,field_description:ev_admin.field_ev_believer__company_id
+msgid "Company"
+msgstr "Compañía"
+
+#. module: ev_admin
+#: model:ir.model.fields,field_description:ev_admin.field_ev_believer__company_name
+msgid "Company Name"
+msgstr "Nombre de la compañía"
+
+#. module: ev_admin
+#: model:ir.model.fields,field_description:ev_admin.field_ev_believer__commercial_company_name
+msgid "Company Name Entity"
+msgstr "Entidad del nombre de la compañía"
+
+#. module: ev_admin
+#: model:ir.model.fields,field_description:ev_admin.field_ev_believer__company_type
+msgid "Company Type"
+msgstr "Tipo de compañía"
+
+#. module: ev_admin
+#: model:ir.model.fields,field_description:ev_admin.field_ev_believer__partner_gid
+msgid "Company database ID"
+msgstr "ID de la base de datos de la empresa"
+
+#. module: ev_admin
+#: model:ir.model.fields,field_description:ev_admin.field_ev_believer__contact_address
+msgid "Complete Address"
+msgstr "Dirección completa"
+
+#. module: ev_admin
+#: model:ir.model,name:ev_admin.model_res_partner
+#: selection:res.partner,type:0
+msgid "Contact"
+msgstr "Contacto"
+
+#. module: ev_admin
+#: model:ir.model.fields,field_description:ev_admin.field_ev_believer__child_ids
+msgid "Contacts"
+msgstr "Contactos"
+
+#. module: ev_admin
+#: model:ir.model.fields,field_description:ev_admin.field_ev_new__content
+msgid "Content"
+msgstr "Contenido"
+
+#. module: ev_admin
+#: model:ir.model.fields,help:ev_admin.field_ev_believer__message_bounce
+msgid "Counter of the number of bounced emails for this contact"
+msgstr "Contador del número de correos electrónicos rebotados de este contacto"
+
+#. module: ev_admin
+#: model:ir.model.fields,field_description:ev_admin.field_ev_believer__country_id
+msgid "Country"
+msgstr "País"
+
+#. module: ev_admin
+#: model:ir.model.fields,field_description:ev_admin.field_ev_believer__create_uid
+#: model:ir.model.fields,field_description:ev_admin.field_ev_department__create_uid
+#: model:ir.model.fields,field_description:ev_admin.field_ev_new__create_uid
+#: model:ir.model.fields,field_description:ev_admin.field_ev_new_category__create_uid
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: ev_admin
+#: model:ir.model.fields,field_description:ev_admin.field_ev_believer__create_date
+#: model:ir.model.fields,field_description:ev_admin.field_ev_department__create_date
+#: model:ir.model.fields,field_description:ev_admin.field_ev_new__create_date
+#: model:ir.model.fields,field_description:ev_admin.field_ev_new_category__create_date
+msgid "Created on"
+msgstr "Creado en"
+
+#. module: ev_admin
+#: model:mail.template,subject:ev_admin.email_credentials
+msgid "Credenciales de Acceso a EV admin App"
+msgstr ""
+
+#. module: ev_admin
+#: model:ir.model.fields,field_description:ev_admin.field_ev_believer__credit_limit
+msgid "Credit Limit"
+msgstr "Crédito límite"
+
+#. module: ev_admin
+#: model:ir.model.fields,help:ev_admin.field_ev_believer__access_url
+msgid "Customer Portal URL"
+msgstr "URL para portal"
+
+#. module: ev_admin
+#: model:ir.model.fields,field_description:ev_admin.field_ev_believer__date
+#: model:ir.model.fields,field_description:ev_admin.field_ev_new__date
+msgid "Date"
+msgstr "Fecha"
+
+#. module: ev_admin
+#: model:ir.model.fields,help:ev_admin.field_ev_new__date
+msgid "Date of News"
+msgstr "Fecha de la noticia"
+
+#. module: ev_admin
+#: model_terms:ir.ui.view,arch_db:ev_admin.ev_news_form
+msgid "Delete"
+msgstr "Eliminar"
+
+#. module: ev_admin
+#: selection:ev.new,state:0
+msgid "Deleted"
+msgstr "Eliminado"
+
+#. module: ev_admin
+#: model:ir.actions.act_window,name:ev_admin.ev_department_action_window
+#: model:ir.ui.menu,name:ev_admin.ev_admin_menu_department
+msgid "Department"
+msgstr "Departamento"
+
+#. module: ev_admin
+#: model:ir.model.fields,field_description:ev_admin.field_ev_believer__department_ids
+msgid "Departments"
+msgstr "Departamentos"
+
+#. module: ev_admin
+#: model:ir.model.fields,help:ev_admin.field_ev_believer__department_ids
+msgid "Departments of Believer"
+msgstr "Departamentos del creyente"
+
+#. module: ev_admin
+#: model:ir.model.fields,field_description:ev_admin.field_ev_department__description
+#: model:ir.model.fields,field_description:ev_admin.field_ev_new__description
+#: model:ir.model.fields,field_description:ev_admin.field_ev_new_category__description
+msgid "Description"
+msgstr "Descripción"
+
+#. module: ev_admin
+#: model:ir.model.fields,help:ev_admin.field_ev_department__description
+msgid "Description of Department"
+msgstr "Descripcion del departamento"
+
+#. module: ev_admin
+#: model:ir.model.fields,help:ev_admin.field_ev_new__description
+msgid "Description of News"
+msgstr "Descripcion de la noticia"
+
+#. module: ev_admin
+#: model:ir.model.fields,help:ev_admin.field_ev_new_category__description
+msgid "Description of News Category"
+msgstr "Descripcion de la categoria de la noticia"
+
+#. module: ev_admin
+#: model:ir.model.fields,field_description:ev_admin.field_ev_believer__display_name
+#: model:ir.model.fields,field_description:ev_admin.field_ev_department__display_name
+#: model:ir.model.fields,field_description:ev_admin.field_ev_new__display_name
+#: model:ir.model.fields,field_description:ev_admin.field_ev_new_category__display_name
+msgid "Display Name"
+msgstr "Nombre a mostrar"
+
+#. module: ev_admin
+#: selection:ev.new,state:0
+msgid "Draft"
+msgstr "Borrador"
+
+#. module: ev_admin
+#: model:ir.model.fields,help:ev_admin.field_ev_believer__partner_share
+msgid "Either customer (not a user), either shared user. Indicated the current partner is a customer without access or with a limited access created for sharing data."
+msgstr "Cualquiera (no un usuario), o compartido usuario. Indica el socio actual es un cliente sin acceso o con un acceso limitado creado para compartir datos."
+
+#. module: ev_admin
+#: model:ir.model.fields,field_description:ev_admin.field_ev_believer__email
+msgid "Email"
+msgstr "Correo electrónico"
+
+#. module: ev_admin
+#: model:ir.model.fields,field_description:ev_admin.field_ev_believer__employee
+msgid "Employee"
+msgstr "Empleado"
+
+#. module: ev_admin
+#: selection:ev.new,state:0
+msgid "Expired"
+msgstr "Expirado"
+
+#. module: ev_admin
+#: model:ir.model.fields,field_description:ev_admin.field_ev_new__expiry_date
+msgid "Expiry Date"
+msgstr "Fecha de expiración"
+
+#. module: ev_admin
+#: model:ir.model.fields,help:ev_admin.field_ev_new__expiry_date
+msgid "Expiry Date of News"
+msgstr "Fecha de expiración de la noticia"
+
+#. module: ev_admin
+#: model:ir.model.fields,field_description:ev_admin.field_ev_believer__message_follower_ids
+msgid "Followers"
+msgstr "Seguidores"
+
+#. module: ev_admin
+#: model:ir.model.fields,field_description:ev_admin.field_ev_believer__message_channel_ids
+msgid "Followers (Channels)"
+msgstr "Seguidores (Canales)"
+
+#. module: ev_admin
+#: model:ir.model.fields,field_description:ev_admin.field_ev_believer__message_partner_ids
+msgid "Followers (Partners)"
+msgstr "Seguidores (Empresas)"
+
+#. module: ev_admin
+#: model:ir.model.fields,help:ev_admin.field_ev_believer__email_formatted
+msgid "Format email address \"Name <email@domain>\""
+msgstr "Dirección de email con formato \"Nombre <email@domain>\""
+
+#. module: ev_admin
+#: model:ir.model.fields,field_description:ev_admin.field_ev_believer__email_formatted
+msgid "Formatted Email"
+msgstr "Email formateado"
+
+#. module: ev_admin
+#: model:ir.model.fields,field_description:ev_admin.field_ev_believer__from_mobile
+msgid "From Mobile"
+msgstr "Desde móvil"
+
+#. module: ev_admin
+#: model:ir.model.fields,field_description:ev_admin.field_ev_believer__from_web
+msgid "From Web"
+msgstr "Desde web"
+
+#. module: ev_admin
+#: model:ir.model.fields,field_description:ev_admin.field_ev_believer__house
+msgid "House Number"
+msgstr "Número de casa"
+
+#. module: ev_admin
+#: model:ir.model.fields,help:ev_admin.field_ev_believer__house
+msgid "House Number of Residence"
+msgstr "Número de casa de residencia"
+
+#. module: ev_admin
+#: model:ir.model.fields,field_description:ev_admin.field_ev_believer__id
+#: model:ir.model.fields,field_description:ev_admin.field_ev_department__id
+#: model:ir.model.fields,field_description:ev_admin.field_ev_new__id
+#: model:ir.model.fields,field_description:ev_admin.field_ev_new_category__id
+msgid "ID"
+msgstr ""
+
+#. module: ev_admin
+#: model:ir.model.fields,field_description:ev_admin.field_ev_believer__im_status
+msgid "IM Status"
+msgstr "Estado del chat"
+
+#. module: ev_admin
+#: model:ir.model.fields,field_description:ev_admin.field_ev_believer__identity
+msgid "Identity"
+msgstr "Identidad"
+
+#. module: ev_admin
+#: model:ir.model.fields,help:ev_admin.field_ev_believer__message_unread
+msgid "If checked new messages require your attention."
+msgstr "Si está marcado, hay nuevos mensajes que requieren su atención"
+
+#. module: ev_admin
+#: model:ir.model.fields,help:ev_admin.field_ev_believer__message_needaction
+msgid "If checked, new messages require your attention."
+msgstr "Si está marcado, hay nuevos mensajes que requieren su atención."
+
+#. module: ev_admin
+#: model:ir.model.fields,help:ev_admin.field_ev_believer__message_has_error
+msgid "If checked, some messages have a delivery error."
+msgstr "Si se encuentra marcado, algunos mensajes tienen error de envío."
+
+#. module: ev_admin
+#: model:ir.model.fields,help:ev_admin.field_ev_believer__is_blacklisted
+msgid "If the email address is on the blacklist, the contact won't receive mass mailing anymore, from any list"
+msgstr "Si la dirección de email esta en la lista negra, el contacto ya no recibirá correo masivo de cualquier lista."
+
+#. module: ev_admin
+#: model:ir.model.fields,field_description:ev_admin.field_ev_believer__image
+#: model:ir.model.fields,field_description:ev_admin.field_ev_new__image
+msgid "Image"
+msgstr "Imagen"
+
+#. module: ev_admin
+#: model:ir.model.fields,field_description:ev_admin.field_ev_new__image_url
+msgid "Image URL"
+msgstr "URL de la imagen"
+
+#. module: ev_admin
+#: model:ir.model.fields,help:ev_admin.field_ev_new__image_url
+msgid "Image URL of News"
+msgstr "URL de la imagen de la noticia"
+
+#. module: ev_admin
+#: model:ir.model.fields,help:ev_admin.field_ev_new__image
+msgid "Image of News"
+msgstr "Imagen de la noticia"
+
+#. module: ev_admin
+#: model:ir.model.fields,field_description:ev_admin.field_ev_believer__industry_id
+msgid "Industry"
+msgstr "Sector"
+
+#. module: ev_admin
+#: model:ir.model.fields,field_description:ev_admin.field_ev_believer__ref
+msgid "Internal Reference"
+msgstr "Referencia interna"
+
+#. module: ev_admin
+#: selection:res.partner,type:0
+msgid "Invoice address"
+msgstr "Dirección de facturación"
+
+#. module: ev_admin
+#: model:ir.model.fields,field_description:ev_admin.field_ev_believer__message_is_follower
+msgid "Is Follower"
+msgstr "Es un seguidor"
+
+#. module: ev_admin
+#: model:ir.model.fields,field_description:ev_admin.field_ev_believer__is_company
+msgid "Is a Company"
+msgstr "Es una compañia"
+
+#. module: ev_admin
+#: model:ir.model.fields,field_description:ev_admin.field_ev_believer__customer
+msgid "Is a Customer"
+msgstr "Es Cliente"
+
+#. module: ev_admin
+#: model:ir.model.fields,field_description:ev_admin.field_ev_believer__supplier
+msgid "Is a Vendor"
+msgstr "Es proveedor"
+
+#. module: ev_admin
+#: model:ir.model.fields,field_description:ev_admin.field_ev_believer__function
+msgid "Job Position"
+msgstr "Puesto de trabajo"
+
+#. module: ev_admin
+#: model:ir.model.fields,field_description:ev_admin.field_ev_believer__lang
+msgid "Language"
+msgstr "Idioma"
+
+#. module: ev_admin
+#: model:ir.model.fields,field_description:ev_admin.field_ev_believer____last_update
+#: model:ir.model.fields,field_description:ev_admin.field_ev_department____last_update
+#: model:ir.model.fields,field_description:ev_admin.field_ev_new____last_update
+#: model:ir.model.fields,field_description:ev_admin.field_ev_new_category____last_update
+msgid "Last Modified on"
+msgstr "Última modificación en"
+
+#. module: ev_admin
+#: model:ir.model.fields,field_description:ev_admin.field_ev_believer__write_uid
+#: model:ir.model.fields,field_description:ev_admin.field_ev_department__write_uid
+#: model:ir.model.fields,field_description:ev_admin.field_ev_new__write_uid
+#: model:ir.model.fields,field_description:ev_admin.field_ev_new_category__write_uid
+msgid "Last Updated by"
+msgstr "Última actualización por"
+
+#. module: ev_admin
+#: model:ir.model.fields,field_description:ev_admin.field_ev_believer__write_date
+#: model:ir.model.fields,field_description:ev_admin.field_ev_department__write_date
+#: model:ir.model.fields,field_description:ev_admin.field_ev_new__write_date
+#: model:ir.model.fields,field_description:ev_admin.field_ev_new_category__write_date
+msgid "Last Updated on"
+msgstr "Última actualización el"
+
+#. module: ev_admin
+#: model:ir.model.fields,field_description:ev_admin.field_ev_believer__localphone_number
+msgid "Local Telephone"
+msgstr "Teléfono local"
+
+#. module: ev_admin
+#: model:ir.model.fields,help:ev_admin.field_ev_believer__localphone_number
+msgid "Local Telephone Number"
+msgstr "Número de teléfono local"
+
+#. module: ev_admin
+#: model:ir.model.fields,field_description:ev_admin.field_ev_believer__sector
+msgid "Locality Sector"
+msgstr "Sector localidad"
+
+#. module: ev_admin
+#: model:ir.model.fields,field_description:ev_admin.field_ev_believer__message_main_attachment_id
+msgid "Main Attachment"
+msgstr "Adjuntos principales"
+
+#. module: ev_admin
+#: model:ir.model.fields,field_description:ev_admin.field_ev_believer__image_medium
+msgid "Medium-sized image"
+msgstr "Imagen de tamaño mediano"
+
+#. module: ev_admin
+#: model:ir.model.fields,help:ev_admin.field_ev_believer__image_medium
+msgid "Medium-sized image of this contact. It is automatically resized as a 128x128px image, with aspect ratio preserved. Use this field in form views or some kanban views."
+msgstr "Imagen mediana de este contacto. Se redimensiona automáticamente a 128x128px, con el ratio de aspecto preservado. Se usa este campo en las vistas formulario y en algunas vistas kanban."
+
+#. module: ev_admin
+#: model:ir.model.fields,field_description:ev_admin.field_ev_believer__message_has_error
+msgid "Message Delivery error"
+msgstr "Error de Envío de Mensaje"
+
+#. module: ev_admin
+#: model:ir.model.fields,field_description:ev_admin.field_ev_believer__message_ids
+msgid "Messages"
+msgstr "Mensajes"
+
+#. module: ev_admin
+#: model:ir.model.fields,field_description:ev_admin.field_ev_believer__mobile
+msgid "Mobile"
+msgstr "Móvil"
+
+#. module: ev_admin
+#: model:ir.model,name:ev_admin.model_ev_believer
+msgid "Model for the Believers"
+msgstr "Modelo para los creyentes"
+
+#. module: ev_admin
+#: model:ir.model,name:ev_admin.model_ev_department
+msgid "Model for the Departments"
+msgstr "Modelo para los departamentos"
+
+#. module: ev_admin
+#: model:ir.model,name:ev_admin.model_ev_new
+msgid "Model for the News"
+msgstr "Modelo para las noticias"
+
+#. module: ev_admin
+#: model:ir.model,name:ev_admin.model_ev_new_category
+msgid "Model for the News Category"
+msgstr "Modelo para las categorías de noticias"
+
+#. module: ev_admin
+#: model:ir.model.fields,field_description:ev_admin.field_ev_believer__municipality_id
+msgid "Municipality"
+msgstr "Municipio"
+
+#. module: ev_admin
+#: model:ir.model.fields,field_description:ev_admin.field_ev_believer__name
+#: model:ir.model.fields,field_description:ev_admin.field_ev_department__name
+#: model:ir.model.fields,field_description:ev_admin.field_ev_new_category__name
+msgid "Name"
+msgstr "Nombre"
+
+#. module: ev_admin
+#: model:ir.model.fields,help:ev_admin.field_ev_department__name
+msgid "Name of Department"
+msgstr "Nombre del departamento"
+
+#. module: ev_admin
+#: model:ir.model.fields,help:ev_admin.field_ev_new_category__name
+msgid "Name of News Category"
+msgstr "Nombre de la categoría de noticias"
+
+#. module: ev_admin
+#: model:ir.actions.act_window,name:ev_admin.ev_news_action_window
+#: model:ir.ui.menu,name:ev_admin.ev_admin_menu_news
+#: model:ir.ui.menu,name:ev_admin.ev_admin_menu_news_index
+msgid "News"
+msgstr "Noticias"
+
+#. module: ev_admin
+#: model:ir.actions.act_window,name:ev_admin.ev_news_category_action_window
+msgid "News Category"
+msgstr "Categoría de noticias"
+
+#. module: ev_admin
+#: code:addons/ev_admin/models/new.py:140
+#, python-format
+msgid "News Category must be active to delete"
+msgstr "La categoría de noticias debe estar activa para eliminar"
+
+#. module: ev_admin
+#: code:addons/ev_admin/models/new.py:146
+#, python-format
+msgid "News Category must be inactive to undelete"
+msgstr "La categoría de noticias debe estar inactiva para desactivar"
+
+#. module: ev_admin
+#: code:addons/ev_admin/models/new.py:106
+#, python-format
+msgid "News must be in draft state to delete"
+msgstr "La noticia debe estar en estado borrador para eliminar"
+
+#. module: ev_admin
+#: code:addons/ev_admin/models/new.py:92
+#, python-format
+msgid "News must be in draft state to publish"
+msgstr "La noticia debe estar en estado borrador para publicar"
+
+#. module: ev_admin
+#: code:addons/ev_admin/models/new.py:99
+#, python-format
+msgid "News must be in published state to draft"
+msgstr "La noticia debe estar en estado publicado para borrador"
+
+#. module: ev_admin
+#: model:ir.model.fields,field_description:ev_admin.field_ev_believer__activity_date_deadline
+msgid "Next Activity Deadline"
+msgstr "Siguiente plazo de actividad"
+
+#. module: ev_admin
+#: model:ir.model.fields,field_description:ev_admin.field_ev_believer__activity_summary
+msgid "Next Activity Summary"
+msgstr "Resumen de la siguiente actividad"
+
+#. module: ev_admin
+#: model:ir.model.fields,field_description:ev_admin.field_ev_believer__activity_type_id
+msgid "Next Activity Type"
+msgstr "Siguiente tipo de actividad"
+
+#. module: ev_admin
+#: model:ir.model.fields,field_description:ev_admin.field_ev_believer__comment
+msgid "Notes"
+msgstr "Notas"
+
+#. module: ev_admin
+#: model:ir.model.fields,field_description:ev_admin.field_ev_believer__message_needaction_counter
+msgid "Number of Actions"
+msgstr "Número de acciones"
+
+#. module: ev_admin
+#: model:ir.model.fields,field_description:ev_admin.field_ev_believer__message_has_error_counter
+msgid "Number of error"
+msgstr "Número de error"
+
+#. module: ev_admin
+#: model:ir.model.fields,help:ev_admin.field_ev_believer__message_needaction_counter
+msgid "Number of messages which requires an action"
+msgstr "Número de mensajes que requieren una acción"
+
+#. module: ev_admin
+#: model:ir.model.fields,help:ev_admin.field_ev_believer__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr "Número de mensajes con error de envío"
+
+#. module: ev_admin
+#: model:ir.model.fields,help:ev_admin.field_ev_believer__message_unread_counter
+msgid "Number of unread messages"
+msgstr "Número de mensajes no leidos"
+
+#. module: ev_admin
+#: selection:res.partner,type:0
+msgid "Other address"
+msgstr "Otra dirección"
+
+#. module: ev_admin
+#: selection:ev.believer,activity_state:0
+msgid "Overdue"
+msgstr "Atrasado"
+
+#. module: ev_admin
+#: model:ir.model.fields,field_description:ev_admin.field_ev_believer__parent_name
+msgid "Parent name"
+msgstr "Nombre del padre"
+
+#. module: ev_admin
+#: model:ir.model.fields,field_description:ev_admin.field_ev_believer__parish_id
+msgid "Parish"
+msgstr "Parroquia"
+
+#. module: ev_admin
+#: model:ir.model.fields,help:ev_admin.field_ev_believer__partner_id
+msgid "Partner of Believer"
+msgstr "Socio del creyente"
+
+#. module: ev_admin
+#: model:ir.model.fields,field_description:ev_admin.field_ev_believer__partner_id
+msgid "Person"
+msgstr "Persona"
+
+#. module: ev_admin
+#: model:ir.model.fields,field_description:ev_admin.field_ev_believer__phone
+msgid "Phone"
+msgstr "Teléfono"
+
+#. module: ev_admin
+#: selection:ev.believer,activity_state:0
+msgid "Planned"
+msgstr "Planeado"
+
+#. module: ev_admin
+#: model:ir.model.fields,field_description:ev_admin.field_ev_believer__access_url
+msgid "Portal Access URL"
+msgstr "URL de acceso al portal"
+
+#. module: ev_admin
+#: selection:res.partner,type:0
+msgid "Private Address"
+msgstr "Dirección Privada"
+
+#. module: ev_admin
+#: model:ir.model.fields,field_description:ev_admin.field_ev_believer__profile
+msgid "Profile"
+msgstr "Perfil"
+
+#. module: ev_admin
+#: selection:ev.new,state:0
+msgid "Published"
+msgstr "Publicado"
+
+#. module: ev_admin
+#: model:ir.model.fields,field_description:ev_admin.field_ev_believer__website_id
+msgid "Registration Website"
+msgstr "Sitio web de registro"
+
+#. module: ev_admin
+#: model:ir.model.fields,field_description:ev_admin.field_ev_believer__parent_id
+msgid "Related Company"
+msgstr "Empresa relacionada"
+
+#. module: ev_admin
+#: model:ir.model.fields,field_description:ev_admin.field_ev_believer__activity_user_id
+msgid "Responsible User"
+msgstr "Usuario responsable"
+
+#. module: ev_admin
+#: model:ir.module.category,name:ev_admin.ev_category
+msgid "Roles EV"
+msgstr "Roles EV"
+
+#. module: ev_admin
+#: model:ir.module.category,description:ev_admin.ev_category
+msgid "Roles de EV Admin"
+msgstr "Roles de EV Admin"
+
+#. module: ev_admin
+#: model:ir.model.fields,field_description:ev_admin.field_ev_believer__user_id
+msgid "Salesperson"
+msgstr "Comercial"
+
+#. module: ev_admin
+#: model:ir.model.fields,help:ev_admin.field_ev_believer__sector
+msgid "Sector of Residence"
+msgstr "Sector de residencia"
+
+#. module: ev_admin
+#: model:ir.model.fields,field_description:ev_admin.field_ev_believer__access_token
+msgid "Security Token"
+msgstr "Token de seguridad"
+
+#. module: ev_admin
+#: model:ir.model.fields,field_description:ev_admin.field_ev_believer__self
+msgid "Self"
+msgstr "Sí mismo"
+
+#. module: ev_admin
+#: model:ir.model.fields,field_description:ev_admin.field_ev_believer__partner_share
+msgid "Share Partner"
+msgstr "Compartir empresa"
+
+#. module: ev_admin
+#: selection:res.partner,type:0
+msgid "Shipping address"
+msgstr "Dirección de envío"
+
+#. module: ev_admin
+#: model:ir.model.fields,field_description:ev_admin.field_ev_believer__signup_expiration
+msgid "Signup Expiration"
+msgstr "Expiración del ingreso"
+
+#. module: ev_admin
+#: model:ir.model.fields,field_description:ev_admin.field_ev_believer__signup_token
+msgid "Signup Token"
+msgstr "Palabra de ingreso"
+
+#. module: ev_admin
+#: model:ir.model.fields,field_description:ev_admin.field_ev_believer__signup_type
+msgid "Signup Token Type"
+msgstr "Tipo de la palabra de ingreso"
+
+#. module: ev_admin
+#: model:ir.model.fields,field_description:ev_admin.field_ev_believer__signup_valid
+msgid "Signup Token is Valid"
+msgstr "La palabra de ingreso es válida"
+
+#. module: ev_admin
+#: model:ir.model.fields,field_description:ev_admin.field_ev_believer__signup_url
+msgid "Signup URL"
+msgstr "URL de ingreso"
+
+#. module: ev_admin
+#: model:ir.model.fields,field_description:ev_admin.field_ev_believer__image_small
+msgid "Small-sized image"
+msgstr "Imagen de tamaño pequeño"
+
+#. module: ev_admin
+#: model:ir.model.fields,help:ev_admin.field_ev_believer__image_small
+msgid "Small-sized image of this contact. It is automatically resized as a 64x64px image, with aspect ratio preserved. Use this field anywhere a small image is required."
+msgstr "Imagen de tamaño pequeño de este contacto. Se redimensiona automáticamente a 64x64 px, con el ratio de aspecto preservado. Use este campo donde se requiera una imagen pequeña."
+
+#. module: ev_admin
+#: model:ir.model.fields,field_description:ev_admin.field_ev_believer__state_id
+msgid "State"
+msgstr "Estado"
+
+#. module: ev_admin
+#: model:ir.model.fields,field_description:ev_admin.field_ev_new__state
+msgid "Status"
+msgstr "Estado"
+
+#. module: ev_admin
+#: model:ir.model.fields,help:ev_admin.field_ev_believer__activity_state
+msgid "Status based on activities\n"
+"Overdue: Due date is already passed\n"
+"Today: Activity date is today\n"
+"Planned: Future activities."
+msgstr "Estado basado en actividades\n"
+"Vencida: la fecha tope ya ha pasado\n"
+"Hoy: La fecha tope es hoy\n"
+"Planificada: futuras actividades."
+
+#. module: ev_admin
+#: model:ir.model.fields,help:ev_admin.field_ev_new__state
+msgid "Status of News"
+msgstr "Estado de la noticia"
+
+#. module: ev_admin
+#: model:ir.model.fields,field_description:ev_admin.field_ev_believer__street
+msgid "Street / Avenue"
+msgstr "Calle / Avenida"
+
+#. module: ev_admin
+#: model:ir.model.fields,help:ev_admin.field_ev_believer__street
+msgid "Street of Residence"
+msgstr "Calle de residencia"
+
+#. module: ev_admin
+#: model:ir.model.fields,field_description:ev_admin.field_ev_believer__street2
+msgid "Street2"
+msgstr "Calle2"
+
+#. module: ev_admin
+#: model:ir.model.fields,field_description:ev_admin.field_ev_believer__category_id
+msgid "Tags"
+msgstr "Etiquetas"
+
+#. module: ev_admin
+#: model:ir.model.fields,field_description:ev_admin.field_ev_believer__vat
+msgid "Tax ID"
+msgstr "NIF"
+
+#. module: ev_admin
+#: model:ir.model.fields,help:ev_admin.field_ev_believer__vat
+msgid "The Tax Identification Number. Complete it if the contact is subjected to government taxes. Used in some legal statements."
+msgstr "El número de identificación de impuesto. Complételo si el contacto está sujeto a los impuestos del gobierno. Utilizado en algunas declaraciones legales."
+
+#. module: ev_admin
+#: model:ir.model.fields,help:ev_admin.field_ev_believer__user_id
+msgid "The internal user in charge of this contact."
+msgstr "El usuario interno a cargo de este contacto."
+
+#. module: ev_admin
+#: model:ir.model.fields,help:ev_admin.field_ev_believer__tz
+msgid "The partner's timezone, used to output proper date and time values inside printed reports. It is important to set a value for this field. You should use the same timezone that is otherwise used to pick and render date and time values: your computer's timezone."
+msgstr "Zona horaria de la empresa, usada para mostrar la fecha y hora adecuadas en los informes. Es importante establecer un valor para este campo. Debería usar la misma zona horaria que se coge en cualquier caso para mostrar los valores de fecha y hora: la zona horaria de su ordenador."
+
+#. module: ev_admin
+#: model:ir.model.fields,help:ev_admin.field_ev_believer__image
+msgid "This field holds the image used as avatar for this contact, limited to 1024x1024px"
+msgstr "Este campo contiene la imagen utilizada como avatar para este contacto, limitada a 1024x1024px"
+
+#. module: ev_admin
+#: model:ir.model.fields,field_description:ev_admin.field_ev_believer__tz
+msgid "Timezone"
+msgstr "Zona horaria"
+
+#. module: ev_admin
+#: model:ir.model.fields,field_description:ev_admin.field_ev_believer__tz_offset
+msgid "Timezone offset"
+msgstr "Compensación de zona horaria"
+
+#. module: ev_admin
+#: model:ir.model.fields,field_description:ev_admin.field_ev_believer__title
+#: model:ir.model.fields,field_description:ev_admin.field_ev_new__title
+msgid "Title"
+msgstr "Título"
+
+#. module: ev_admin
+#: model:ir.model.fields,help:ev_admin.field_ev_new__title
+msgid "Title of News"
+msgstr "Título de la noticia"
+
+#. module: ev_admin
+#: selection:ev.believer,activity_state:0
+msgid "Today"
+msgstr "Hoy"
+
+#. module: ev_admin
+#: model:ir.model.fields,field_description:ev_admin.field_ev_believer__message_unread
+msgid "Unread Messages"
+msgstr "Mensajes por leer"
+
+#. module: ev_admin
+#: model:ir.model.fields,field_description:ev_admin.field_ev_believer__message_unread_counter
+msgid "Unread Messages Counter"
+msgstr "Contador de mensajes sin leer"
+
+#. module: ev_admin
+#: model:ir.model.fields,help:ev_admin.field_ev_believer__barcode
+msgid "Use a barcode to identify this contact from the Point of Sale."
+msgstr "Use un código de barras para identificar este contacto desde el punto de venta."
+
+#. module: ev_admin
+#: model:ir.model.fields,help:ev_admin.field_ev_believer__type
+#: model:ir.model.fields,help:ev_admin.field_res_partner__type
+#: model:ir.model.fields,help:ev_admin.field_res_users__type
+msgid "Used by Sales and Purchase Apps to select the relevant address depending on the context."
+msgstr "Utilizado por las aplicaciones de ventas y compras para seleccionar la dirección relevante dependiendo del contexto."
+
+#. module: ev_admin
+#: model:ir.model,name:ev_admin.model_res_users
+#: model:ir.model.fields,field_description:ev_admin.field_ev_believer__user_ids
+msgid "Users"
+msgstr "Usuarios"
+
+#. module: ev_admin
+#: model:ir.actions.server,name:ev_admin.verify_expiry_ir_actions_server
+#: model:ir.cron,cron_name:ev_admin.verify_expiry
+#: model:ir.cron,name:ev_admin.verify_expiry
+msgid "Verify Expiry"
+msgstr "Verificar caducidad"
+
+#. module: ev_admin
+#: model:ir.model.fields,field_description:ev_admin.field_ev_believer__website
+msgid "Website"
+msgstr "Sitio web"
+
+#. module: ev_admin
+#: model:ir.model.fields,field_description:ev_admin.field_ev_believer__website_message_ids
+msgid "Website Messages"
+msgstr "Mensajes del sitio web"
+
+#. module: ev_admin
+#: model:ir.model.fields,help:ev_admin.field_ev_believer__website_message_ids
+msgid "Website communication history"
+msgstr "Historial de comunicaciones del sitio web"
+
+#. module: ev_admin
+#: model:ir.model.fields,field_description:ev_admin.field_ev_believer__zip
+msgid "Zip"
+msgstr "C.P."
+
+#. module: ev_admin
+#: model:res.groups,name:ev_admin.group_rol_admin
+msgid "admin"
+msgstr "administrador"
+
+#. module: ev_admin
+#: model:ir.model.fields,field_description:ev_admin.field_ev_believer__believer
+#: model:ir.model.fields,field_description:ev_admin.field_res_partner__believer
+#: model:ir.model.fields,field_description:ev_admin.field_res_users__believer
+#: model:res.groups,name:ev_admin.group_rol_believer
+msgid "believer"
+msgstr "creyente"
+
+#. module: ev_admin
+#: selection:res.partner,type:0
+msgid "believer address"
+msgstr "dirección de creyente"
+
+#. module: ev_admin
+#: model:ir.model.fields,field_description:ev_admin.field_ev_believer__building
+msgid "building / premises"
+msgstr "edificio / local"
+
+#. module: ev_admin
+#: model_terms:ir.actions.act_window,help:ev_admin.ev_believer_action_window
+msgid "from this module, believer records are created"
+msgstr "desde este módulo, los registros de creyente se crean"
+
+#. module: ev_admin
+#: model_terms:ir.actions.act_window,help:ev_admin.ev_department_action_window
+msgid "from this module, department records are created"
+msgstr "desde este módulo, los registros de departamento se crean"
+
+#. module: ev_admin
+#: model_terms:ir.actions.act_window,help:ev_admin.ev_news_action_window
+#: model_terms:ir.actions.act_window,help:ev_admin.ev_news_category_action_window
+msgid "from this module, news records are created"
+msgstr "desde este módulo, los registros de noticias se crean"
+
+#. module: ev_admin
+#: model:ir.model.fields,help:ev_admin.field_ev_believer__profile
+msgid "profile Record"
+msgstr "Registro de perfil"
+
