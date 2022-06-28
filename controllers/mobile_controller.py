@@ -135,11 +135,10 @@ class MobileController(http.Controller):
                 'message': 'Error retrieving'
             })
 
-    @http.route('/believer/<int:believer_id>', type='json', auth="user", methods=['POST'])
-    def GetBeliever(self, believer_id, **post):
-        model_believer = request.env['ev.believer']
-        believer = model_believer.search([('id', '=', believer_id)])
-
+    @http.route(['/believer/<model("ev.believer"):believer>', '/believer/p/<model("res.partner"):partner>'], type='json', auth="user", methods=['POST'])
+    def GetBeliever(self, believer=0, partner=0, **post):
+        if partner:
+            believer = request.env['ev.believer'].search([('partner_id', '=', partner.id)])
         if believer:
             return json.dumps({
                 'status': 'success',
