@@ -14,8 +14,9 @@ class MobileController(http.Controller):
         model_believer = request.env['ev.believer']
         model_user = request.env['res.users']
         believer = model_believer.create({
+            'profile': False,
+            'from_mobile': True,
             'name': post.get('name'),
-            'from_mobile': True
         })
         email, password = post.get('email'), post.get('password')
         user = model_user.create({
@@ -47,37 +48,24 @@ class MobileController(http.Controller):
                 'message': 'Error registering'
             })
 
-    @http.route('/update/believer/<int:believer_id>', type='json', auth="user", methods=['POST'])
-    def UpdateBeliever(self, believer_id, **post):
-        model_believer = request.env['ev.believer']
+    @http.route('/update/believer/<model("ev.believer"):believer>', type='json', auth="user", methods=['POST'])
+    def UpdateBeliever(self, believer, **post):
         model_user = request.env['res.users']
-
-        believer = model_believer.search([('id', '=', believer_id)])
-
+        fields = [
+            'name', 'identity', 'state_id',
+            'municipality_id', 'parish_id',
+            'sector', 'street', 'building',
+            'house', 'localphone_number', 'cellphone_number'
+        ]; values = {}
+        for field in fields:
+            if post.get(field):
+                values[field] = post.get(field)
         if believer:
-            believer.write({
-                'profile': True,
-                'name': post.get('name'),
-                'identity': post.get('identity'),
-                'state_id': post.get('state_id'),
-                'municipality_id': post.get('municipality_id'),
-                'parish_id': post.get('parish_id'),
-                'sector': post.get('sector'),
-                'street': post.get('street'),
-                'building': post.get('building'),
-                'house': post.get('house'),
-                'localphone_number': post.get('localphone_number'),
-                'cellphone_number': post.get('cellphone_number')
-            })
-
+            believer.write(values)
             user = model_user.search([('believer_id', '=', believer.id)])
-
             if user:
                 if post.get('password'):
-                    user.write({
-                        'password': post.get('password')
-                    })
-
+                    user.write({ 'password': post.get('password') })
             return json.dumps({
                 'status': 'success',
                 'message': 'Successfully updated',
@@ -164,7 +152,7 @@ class MobileController(http.Controller):
                     'building': believer.building,
                     'house': believer.house,
                     'localphone_number': believer.localphone_number,
-                    'localphone_number': believer.cellphone_number,
+                    'cellphone_number': believer.cellphone_number,
                     'department_ids': [{
                         'id': department.id,
                         'name': department.name
@@ -285,6 +273,23 @@ class MobileController(http.Controller):
                     },
                     'state': new.state
                 }
+            })
+        else:
+            return json.dumps({
+                'status': 'error',
+                'message': 'Error retrieving'
+            })
+
+    @http.route('/roles/<model("res.users"):user>', type='json', auth="user", methods=['POST'])
+    def GetRoles(self, user=0, **post):
+        if user:
+            return json.dumps({
+                'status': 'success',
+                'message': 'Successfully retrieved',
+                'roles': [{
+                    'is_admin': user.has_group('base.group_system'),
+                    'is_believer': user.has_group('ev_admin.group_rol_believer'),
+                }]
             })
         else:
             return json.dumps({
