@@ -113,3 +113,12 @@ class Believer(models.Model):
         else:
             _logger.error('Template not found')
             return False
+
+    def unlink(self):
+        for r in self:
+            if r.partner_id:
+                user = self.env['res.users'].search([('partner_id', '=', r.partner_id.id)])
+                if user:
+                    user.unlink()
+                # r.partner_id.unlink()
+        return super(Believer, self).unlink()
