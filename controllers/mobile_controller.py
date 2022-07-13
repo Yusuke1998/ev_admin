@@ -286,10 +286,12 @@ class MobileController(http.Controller):
             return json.dumps({
                 'status': 'success',
                 'message': 'Successfully retrieved',
-                'roles': [{
+                'roles': {
                     'is_admin': user.has_group('base.group_system'),
                     'is_believer': user.has_group('ev_admin.group_rol_believer'),
-                }]
+                },
+                'is_admin': user.has_group('base.group_system'),
+                'is_believer': user.has_group('ev_admin.group_rol_believer'),
             })
         else:
             return json.dumps({
